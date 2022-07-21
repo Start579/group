@@ -1,0 +1,119 @@
+.footer{
+    background-color: $color-dark;
+    padding-bottom: 83px;
+    padding-top: 101px;
+}
+.footer__flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+.footer__caption{
+        font-family: $main-font;
+        font-size: 60px;
+        line-height: calc(67px / 60px);
+        color: #FFFFFF;
+}
+.hero-logo__btn{
+    margin-left: auto;
+    padding-bottom: 15px;
+}
+.logo__icon{
+    fill: #FFFFFF;
+    @extend %animation;
+    &:hover, &:focus{
+        fill: $color-secondary;
+    }
+}
+.footer-form__container {
+    margin-bottom: 97px;
+}
+
+.footer__form {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 77px;
+}
+
+.footer__input {
+    border: none;
+    background-color: $color-dark;
+    border-bottom: 1px solid #FFFFFF;
+    width: 500px;
+    height: 55px;
+    @extend %animation;
+    font-family: $second-font;
+    font-size: 18px;
+    line-height: calc(22px /18px);
+    color: #FFFFFF;
+    &::placeholder{
+            font-family: $second-font;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: calc(22px /18px);
+            color: #FFFFFF;
+            opacity: 0.2;
+            @extend %animation;
+    }
+    &:hover , &:focus {
+        outline: none;
+        border-color: $color-secondary;
+    }
+    &:hover::placeholder, &:focus::placeholder{
+        color: $color-secondary;
+    }
+}
+
+.footer__button {
+    display: block;
+    margin-top: 50px;
+    width: 193px;
+    height: 42px;
+    border: none;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(22px / 20px);
+    color: #000000;
+    background-color: #fff;
+    cursor: pointer;
+    @extend %animation;
+    &:hover, &focus{
+        background-color: #afb1b8;
+        color: $color-secondary;
+    }
+}
+.footer-social__container{
+    margin-bottom: 48px;
+}
+.footer__social{
+    font-family: $second-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 28px;
+}
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 52px;
+}
+.information__list {
+    display: flex;
+    justify-content: space-between;
+}
+.information__link {
+    font-family: $second-font;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: calc(22px / 18px);   
+        color: #FFFFFF;
+        text-decoration: none;
+        @extend %animation;
+        &:hover, &:focus{
+            color: $color-secondary;
+        }
+}
