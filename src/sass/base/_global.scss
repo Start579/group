@@ -39,18 +39,16 @@ li, ol {
 .container {
     padding-left: 15px;
     padding-right: 15px;
-padding-top: 0;
-padding-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    width: 1200px;
+    // @media screen and (min-width: 768px) {
+    //     width: 768px;
+    // }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //     width: 1200px;
+    // }
 }
 
 .link,
@@ -72,8 +70,8 @@ padding-bottom: 0;
     overflow: hidden;
 }
 
-#scrollbar {
-    width: auto;
-    height: 100vh;
-    overflow: auto;
-}
+// #scrollbar {
+//     width: auto;
+//     height: 100vh;
+//     overflow: auto;
+// }

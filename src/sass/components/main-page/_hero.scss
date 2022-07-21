@@ -1,9 +1,59 @@
+.hero__bkg {
+    background-image: url(../images/header_hero/hero-bkg2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .hero__bkg::before {
-    content: "";
-    position: absolute;
-    background-color: $color-dark;
-height: 180px;
-left: 0;
-    right: 0;
-    background-size: cover;
+  content: '';
+  position: absolute;
+  background-color: $color-dark;
+  height: 180px;
+  left: 0;
+  right: 0;
+  background-size: contain;
+}
+.hero__text {
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+  padding-left: 360px;
+  padding-bottom: 335px;
+  min-width: 290px;
+}
+.play__text {
+    font-family: $second-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+}
+.play__btn {
+    fill: $color-white;
+    background-color: transparent;
+}
+.specs__text {
+    font-family: $second-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.specs__header {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.12;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.specs__table {
+    display: flex;
 }

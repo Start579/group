@@ -1,8 +1,8 @@
 .header__bkg {
-background-image: url(../images/header_hero/header-bkg3x.jpg);
+background-image: url(../images/header_hero/header-bkg1x.jpg);
 background-repeat: no-repeat;
-background-size: cover;
-height: 130vh;
+background-size: contain;
+height: 100vh;
 background-position: center;
 position: relative;
 }
@@ -14,10 +14,11 @@ background-image: url(../images/svg/tree.svg);
  left: 0;
  right: 0;
  bottom: 0;
- background-size: cover;
+ background-size: contain;
  background-repeat: no-repeat;
- transform: translateY(150px);
+ transform: translateY(200px);
  z-index: 2;
+ background-position: center;
 }
 .header__bkg::after {
     content: "";
@@ -27,10 +28,11 @@ background-image: url(../images/svg/tree.svg);
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    transform: translateY(525px) rotate(180deg);
+    transform: translateY(430px) rotate(180deg);
     z-index: 4;
+    background-position: center;
 }
 
 .nav {
@@ -121,9 +123,9 @@ color: $color-dark;
     color: $color-secondary;
     text-transform: uppercase;
     opacity: 0.3;
-bottom: 115px;
+bottom: 95px;
     position: absolute;
-    right: 32%;
+    right: 14%;
     z-index: 1;
 }
 .nav__text--3 {
@@ -137,7 +139,7 @@ bottom: 115px;
     position: absolute;
     z-index: 4;
     max-width: 360px;
-    right: 33%;
+    right: 13%;
     bottom: 0;
     text-align: center;
 }
