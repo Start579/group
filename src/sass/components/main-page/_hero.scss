@@ -1,0 +1,9 @@
+.hero__bkg::before {
+    content: "";
+    position: absolute;
+    background-color: $color-dark;
+height: 180px;
+left: 0;
+    right: 0;
+    background-size: cover;
+}
