@@ -1,20 +1,20 @@
 .header__bkg {
 background-image: url(../images/header_hero/header-bkg1x.jpg);
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
 height: 100vh;
 background-position: center;
 position: relative;
 }
 .header__bkg::before {
  content: "";
-background-image: url(../images/svg/tree.svg);
+// background-image: url(../images/svg/tree.svg);
  position: absolute;
  height: 456px;
  left: 0;
  right: 0;
  bottom: 0;
- background-size: contain;
+ background-size: cover;
  background-repeat: no-repeat;
  transform: translateY(200px);
  z-index: 2;
@@ -22,7 +22,7 @@ background-image: url(../images/svg/tree.svg);
 }
 .header__bkg::after {
     content: "";
-    background-image: url(../images/svg/tree.svg);
+    // background-image: url(../images/svg/tree.svg);
     position: absolute;
     height: 456px;
     left: 0;

@@ -1,5 +1,5 @@
 .hero__bkg {
-    background-image: url(../images/header_hero/hero-bkg2x.jpg);
+    // background-image: url(../images/header_hero/hero-bkg2x.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -7,7 +7,7 @@
 .hero__bkg::before {
   content: '';
   position: absolute;
-  background-color: $color-dark;
+  // background-color: $color-dark;
   height: 180px;
   left: 0;
   right: 0;
