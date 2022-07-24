@@ -53,6 +53,7 @@ background-image: url(../images/svg/tree.svg);
     padding: 11px 74px 11px 74px;
     text-transform: uppercase;
     @extend %animation;
+    cursor: pointer;
 }
 .nav__btn:hover {
     background-color: $color-star;
@@ -62,6 +63,7 @@ background-image: url(../images/svg/tree.svg);
     background-color: transparent;
     fill: $color-dark;
     @extend %animation;
+    cursor: pointer;
 }
 .logo:hover {
     fill: $color-secondary;
@@ -74,6 +76,7 @@ background-image: url(../images/svg/tree.svg);
 font-size: 20px;
 line-height: 1.1;
 color: $color-dark;
+cursor: pointer;
 }
 .top {
     display: flex;
