@@ -1,12 +1,12 @@
 .hero__bkg {
-    background-image: url(../images/header_hero/hero-bkg1x.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    height: 170vh;
+  background-image: url(../images/header_hero/hero-bkg1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  position: relative;
+  min-width: 1600px;
+  margin: 0 auto;
 }
 .hero__bkg::before {
   content: '';
@@ -20,9 +20,9 @@
 .hero__img {
   background-color: transparent;
   position: absolute;
-right: 33%;
-bottom: 60%;
-z-index: 5;
+  top: 250px;
+  right: 435px;
+  z-index: 5;
 }
 .hero__text {
   font-family: $second-font;
@@ -30,41 +30,41 @@ z-index: 5;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
-  color: #ffffff;
+  color: $color-white;
   max-width: 305px;
 }
 .hero__text--line {
-border-bottom: 1px solid #ffffff;
-padding-bottom: 30px;
+  border-bottom: 1px solid $color-white;
+  padding-bottom: 30px;
 }
 .hero__text:not(:last-child) {
   margin-right: 87px;
 }
 .hero__box {
   display: flex;
-padding-top: 515px;
-position: relative;
+  padding-top: 515px;
+  position: relative;
 }
 .play__text {
-    font-family: $second-font;
+  font-family: $second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.22;
   color: $color-white;
-  margin-top: 12px;
+  padding-top: 12px;
 }
 .hero__btn {
   padding-top: 82px;
   border: none;
   background-color: transparent;
   position: absolute;
-left: 16%;
+  left: 16%;
   bottom: 0;
   cursor: pointer;
   fill: $color-white;
   stroke: $color-white;
-  }
+}
 
 .hero__btn:hover {
   stroke: $color-star;
@@ -90,16 +90,17 @@ left: 16%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 35%;
+ padding-top: 600px;
+  padding-bottom: 80px;
 }
 .specs__text {
-    font-family: $second-font;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    color: $color-white;
-    text-transform: uppercase;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $color-white;
+  text-transform: uppercase;
   margin-right: 25px;
   width: 190px;
 }
@@ -113,22 +114,22 @@ left: 16%;
   text-transform: uppercase;
 }
 .specs__header {
-    font-family: $main-font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 1.12;
-    color: $color-white;
-    text-transform: uppercase;
-    margin-right: 130px;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 1.12;
+  color: $color-white;
+  text-transform: uppercase;
+  margin-right: 130px;
 }
 .specs__table {
-    display: flex;
-    width: 585px;
-    justify-content: flex-start;
+  display: flex;
+  width: 585px;
+  justify-content: flex-start;
 }
 .specs__table:not(:last-child) {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .specs__line {
   border-top: 1px solid $color-white;
