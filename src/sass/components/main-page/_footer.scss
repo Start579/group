@@ -14,14 +14,14 @@
         font-family: $main-font;
         font-size: 60px;
         line-height: calc(67px / 60px);
-        color: #FFFFFF;
+        color: $color-white;
 }
 .hero-logo__btn{
     margin-left: auto;
     padding-bottom: 15px;
 }
 .logo__icon{
-    fill: #FFFFFF;
+    fill: $color-white;
     @extend %animation;
     &:hover, &:focus{
         fill: $color-secondary;
@@ -40,20 +40,20 @@
 .footer__input {
     border: none;
     background-color: $color-dark;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid $color-white;
     width: 500px;
     height: 55px;
     @extend %animation;
     font-family: $second-font;
     font-size: 18px;
     line-height: calc(22px /18px);
-    color: #FFFFFF;
+    color: $color-white;
     &::placeholder{
             font-family: $second-font;
             font-weight: 700;
             font-size: 18px;
             line-height: calc(22px /18px);
-            color: #FFFFFF;
+            color: $color-white;
             opacity: 0.2;
             @extend %animation;
     }
@@ -76,8 +76,8 @@
     font-weight: 700;
     font-size: 20px;
     line-height: calc(22px / 20px);
-    color: #000000;
-    background-color: #fff;
+    color: $color-dark;
+    background-color: $color-white;
     cursor: pointer;
     @extend %animation;
     &:hover, &focus{
@@ -93,7 +93,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: $color-white;
     margin-bottom: 28px;
 }
 .footer__list {
@@ -110,7 +110,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: calc(22px / 18px);   
-        color: #FFFFFF;
+        color: $color-white;
         text-decoration: none;
         @extend %animation;
         &:hover, &:focus{
@@ -144,7 +144,7 @@
     width: 528px;
     z-index: 11;
     height: 650px;
-    background: #ffffff;
+    background: $color-white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -194,25 +194,23 @@
     letter-spacing: 0.03em;
     margin-bottom: 12px;
 
-    color: #000000;
+    color: $color-dark;
 }
 
 .modal-label {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: #000000;
+    color: $color-dark;
     margin-bottom: 4px;
 }
 
 .input-check {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
     padding: 0;
-
     overflow: hidden;
     border: 0;
 
@@ -230,19 +228,19 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: $color-dark;
     margin-left: 14px;
 }
 
 .checkbox-link {
-    color: #2196f3;
+    color: $color-secondary;
 }
 
 .icon-check {
     display: inline-block;
     width: 16px;
     height: 15px;
-    border: 2px solid #212121;
+    border: 2px solid $color-dark;
     border-radius: 2px;
     margin-right: 7px;
 }
@@ -262,12 +260,12 @@
     margin: 0;
     padding: 11px 42px;
     border: none;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid $color-white;
     max-height: 40px;
     outline: none;
     @extend %animation;
     font-size: 12px;
-    color: white;
+    color: $color-dark;
     line-height: 1.17;
 
     &:hover,
@@ -286,17 +284,17 @@
     resize: none;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid $color-white;
     
     padding: 12px 16px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     height: 40px;
-    color: white;
+    color: $color-dark;
     @extend %animation;
     &::placeholder{
-        color: #000000;
+        color: $color-dark;
     }
     &:hover,
     &:focus {
@@ -318,7 +316,7 @@
     left: 700px;
     top: 712px;
     background-color: transparent;
-    border: 2px solid#0093A1;
+    border: 2px solid $color-secondary;
     border-radius: 4px;
     cursor: pointer;
     letter-spacing: 0.06em;
@@ -332,9 +330,9 @@
     &:hover,
     &:focus {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        background: #B9C400;
+        background: $color-star;
         border: none;
-        color: #000000;
+        color: $color-dark;
     }
 }
 .form{
