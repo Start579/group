@@ -5,14 +5,12 @@ background-size: cover;
 height: 100vh;
 background-position: center;
 position: relative;
-margin-left: auto;
-margin-right: auto;
 }
 .header__bkg::before {
  content: "";
 background-image: url(../images/svg/tree.svg);
  position: absolute;
- min-height: 40vh;
+ height: 40vh;
  left: 0;
  right: 0;
  bottom: 0;
@@ -30,7 +28,7 @@ background-image: url(../images/svg/tree.svg);
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     transform: translateY(430px) rotate(180deg);
     z-index: 4;
@@ -55,6 +53,7 @@ background-image: url(../images/svg/tree.svg);
     padding: 11px 74px 11px 74px;
     text-transform: uppercase;
     @extend %animation;
+    cursor: pointer;
 }
 .nav__btn:hover {
     background-color: $color-star;
@@ -64,6 +63,7 @@ background-image: url(../images/svg/tree.svg);
     background-color: transparent;
     fill: $color-dark;
     @extend %animation;
+    cursor: pointer;
 }
 .logo:hover {
     fill: $color-secondary;
@@ -76,6 +76,7 @@ background-image: url(../images/svg/tree.svg);
 font-size: 20px;
 line-height: 1.1;
 color: $color-dark;
+cursor: pointer;
 }
 .top {
     display: flex;
@@ -130,7 +131,7 @@ color: $color-dark;
     opacity: 0.3;
 bottom: 147px;
     position: absolute;
-    right: 28%;
+    right: 33%;
     z-index: 1;
 }
 .nav__text--3 {
@@ -142,9 +143,9 @@ bottom: 147px;
     color: $color-secondary;
     text-transform: uppercase;
     position: absolute;
-    z-index: 4;
+    z-index: 5;
     max-width: 360px;
-    right: 13%;
+    right: 33%;
     bottom: 0;
     text-align: center;
 }
